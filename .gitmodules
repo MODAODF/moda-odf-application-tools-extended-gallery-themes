@@ -7,3 +7,6 @@
 #
 # Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
+[submodule "《台灣道路交通標誌》 LibreOffice 圖庫主題擴充功能"]
+	path = sources/taiwan-road-traffic-signs
+	url = https://git.ossii.com.tw/buoren/libreoffice-gallary-taiwan-road-traffic-signs.git
