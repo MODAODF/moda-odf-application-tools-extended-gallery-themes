@@ -1,0 +1,35 @@
+# Test if product is buildable
+#
+# References:
+#
+# * Workflow syntax for GitHub Actions - GitHub Docs
+#   https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions
+#
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# Copyright 2026 OSS Integral Institute Co., Ltd. <https://www.ossii.com.tw/contact>
+# SPDX-License-Identifier: CC-BY-SA-4.0
+name: Test if product is buildable
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  test-build:
+    name: Test if product is buildable
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out content from the Git repository
+        uses: actions/checkout@v7
+        with:
+          # Fetch all history and tags
+          fetch-depth: 0
+
+      - name: Install build dependencies
+        run: |
+          set -e
+          sudo ./dev-assets/deploy-dev-environment.sh
+
+      - name: Test build product
+        run: |
+          ./build-product.sh

@@ -1,0 +1,46 @@
+# REUSE licensing information association file
+#
+# References:
+#
+# * REUSE.toml | REUSE Specification – Version 3.2 | REUSE
+#   https://reuse.software/spec-3.2/#reusetoml
+#
+# Copyright 2024 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
+# Copyright 2026 OSS Integral Institute Co., Ltd. <https://www.ossii.com.tw/contact>
+# SPDX-License-Identifier: CC-BY-SA-4.0+
+
+version = 1
+
+[[annotations]]
+path = [
+    "AGENTS.md",
+    "**/AGENTS.md",
+    "README.md",
+    "**/README.md",
+    "README.*.md",
+    "**/README.*.md",
+    "docs/*.md",
+]
+SPDX-FileCopyrightText = '2026 OSS Integral Institute Co., Ltd. <https://www.ossii.com.tw/contact>'
+SPDX-License-Identifier = 'MIT'
+
+[[annotations]]
+path = [
+    "description.xml.in",
+    "description/*.txt",
+    "dist-assets/zip-include*.lst",
+    "extension-licenses/*.txt",
+    "icon/icon.*",
+    "manifest.xml",
+    "META-INF/manifest.xml",
+    "Paths.xcu",
+]
+SPDX-FileCopyrightText = '2026 OSS Integral Institute Co., Ltd. <https://www.ossii.com.tw/contact>'
+SPDX-License-Identifier = 'CC-BY-SA-4.0+'
+
+[[annotations]]
+path = [
+    "staging/gallery/images/*.svg",
+]
+SPDX-FileCopyrightText = '1968 MINISTRY OF TRANSPORTATION AND COMMUNICATIONS, R.O.C. <https://poms.motc.gov.tw/message/>'
+SPDX-License-Identifier = 'CC0-1.0'

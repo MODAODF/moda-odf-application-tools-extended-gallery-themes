@@ -1,0 +1,11 @@
+description/description_en.txt
+description/description_zh-TW.txt
+gallery/*
+icon/*
+extension-licenses/*
+LICENSES/*
+META-INF/*
+.editorconfig
+description.xml
+Paths.xcu
+REUSE.toml
