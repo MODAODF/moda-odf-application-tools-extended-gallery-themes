@@ -117,3 +117,7 @@
 
 # Don't track generated description.xml
 /description.xml
+
+# Don't track generated gallery files
+/gallery/*
+!/gallery/README.md

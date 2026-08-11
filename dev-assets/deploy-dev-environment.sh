@@ -515,12 +515,23 @@ if test "${ID_LIKE}" == debian \
     fi
 fi
 
-if ! workaround_git_dubious_ownership_error "${project_dir}"; then
+repo_dirs=(
+    "${project_dir}"
+    "${project_dir}/sources/taiwan-road-traffic-signs"
+)
+
+for dir in "${repo_dirs[@]}"; do
     printf \
-        "Error: Unable to workaround Git's \"detected dubious ownership...\" error.\\n" \
-        1>&2
-    exit 2
-fi
+        "Info: Workarounding Git's \"detected dubious ownership...\" error for \"%s\" Git repository...\n" \
+        "${dir}"
+    if ! workaround_git_dubious_ownership_error "${dir}"; then
+        printf \
+            "Error: Unable to workaround Git's \"detected dubious ownership...\" error for \"%s\" Git repository.\\n" \
+            "${dir}" \
+            1>&2
+        exit 2
+    fi
+done
 
 printf \
     'Info: Operation completed without errors.\n'
