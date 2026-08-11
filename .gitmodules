@@ -10,3 +10,5 @@
 [submodule "taiwan-road-traffic-signs"]
 	path = sources/taiwan-road-traffic-signs
 	url = https://git.ossii.com.tw/buoren/libreoffice-gallary-taiwan-road-traffic-signs.git
+	ignore = dirty
+	shallow = true
