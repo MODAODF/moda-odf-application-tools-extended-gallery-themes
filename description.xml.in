@@ -6,8 +6,8 @@
     xmlns:xlink="http://www.w3.org/1999/xlink"
 >
     <display-name>
-        <name lang="en">Gallery theme of _something_</name>
-        <name lang="zh-TW">_某物_ 圖庫主題</name>
+        <name lang="en">MODA ODF Application Tools extended gallery themes</name>
+        <name lang="zh-TW">MODA ODF 文件應用工具擴充圖庫主題</name>
     </display-name>
     <extension-description>
         <src xlink:href="description/description_en.txt" lang="en" />
@@ -16,10 +16,10 @@
     <icon>
         <default xlink:href="icon/icon.png" />
     </icon>
-    <identifier value="tw.com.ossii.libreoffice.extensions.gallery-themes.something" />
+    <identifier value="tw.gov.moda.libreoffice.extensions.extended-gallery-themes" />
     <publisher>
-        <name xlink:href="https://www.ossii.com.tw" lang="en">OSS Integral Institute Co., Ltd.</name>
-        <name xlink:href="https://www.ossii.com.tw" lang="zh-TW">晟鑫科技股份有限公司</name>
+        <name xlink:href="https://moda.gov.tw/en" lang="en">Ministry of Digital Affairs, Taiwan (R.O.C.)</name>
+        <name xlink:href="https://moda.gov.tw" lang="zh-TW">中華民國（台灣）數位發展部</name>
     </publisher>
     <version value="__VERSION__" />
     <registration>
