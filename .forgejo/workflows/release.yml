@@ -29,6 +29,8 @@ jobs:
           # Fetch all history and tags
           fetch-depth: 0
 
+          submodules: true
+
       - name: Determine the project identifier
         run: printf "project_id=${FORGEJO_REPOSITORY##*/}\\n" >> $FORGEJO_ENV
 

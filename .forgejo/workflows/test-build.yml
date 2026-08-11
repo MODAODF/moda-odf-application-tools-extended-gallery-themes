@@ -25,6 +25,8 @@ jobs:
           # Fetch all history and tags
           fetch-depth: 0
 
+          submodules: true
+
       - name: Install build dependencies
         run: |
           set -e
