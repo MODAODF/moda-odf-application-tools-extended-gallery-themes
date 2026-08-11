@@ -1,50 +1,73 @@
-# LibreOffice 圖庫主題擴充功能專案範本
+# MODA ODF 文件應用工具擴充圖庫主題
 
-快速且精確地建立符合需求的圖庫主題 LibreOffice 擴充功能
+擴充 MODA ODF 文件應用工具的圖庫內容
 
-<https://git.ossii.com.tw/buoren/libo-ext-gal-thm-template>  
+<https://git.ossii.com.tw/buoren/moda-odf-application-tools-extended-gallery-themes>  
 [![pre-commit 框架已引入標誌](https://img.shields.io/badge/pre--commit-已引入-brightgreen?logo=pre-commit&logoColor=white "鄙專案使用 pre-commit 框架來檢查潛在問題")](https://pre-commit.com/)
 
-## 特色
+## 使用說明
 
-* 整合 [EditorConfig](https://editorconfig.org) 以在專案協作者間支援的純文字文件編輯器/整合式開發環境上同步偏好設定。
-* 整合 [pre-commit 框架](https://pre-commit.com) 以在每次版本提交時自動檢查包含但不限於下列之潛在問題：
-    + 意外提交進機敏資訊或是不適合版控的文件
-    + 不一致的程式碼縮排或換行格式
-    + Shell 腳本、Markdown 與 YAML 文件的撰寫
-    + 智慧財產授權合規性
-* 包含用於快速啟動產品開發與測試之 [Docker Compose](https://docs.docker.com/compose/) 虛擬化環境的設定檔與自動化工具
-* 支援用於自動化產品建構與測試之 Forgejo 持續整合(CI)機制
-* 支援用於自動化發布產品建構產物之 Forgejo 持續交付(CD)機制
+以下說明本產品的使用方式：
 
-## 如何使用
+1. 自專案釋出頁面下載建構好的 LibreOffice 圖庫主題擴充功能檔案（副檔名為 `.oxt`）
+1. 於 LibreOffice 產品的選單中選擇「工具」→「擴充功能」開啟「擴充功能」視窗
+1. 於「擴充功能」視窗點擊下方的「加入」按鈕開啟檔案選擇對話框
+1. 於檔案選擇對話框選擇下載好的 LibreOffice 圖庫主題擴充功能檔案，然後點擊「開啟」按鈕
+1. 於「擴充功能軟體授權協議」對話框中確認擴充功能的授權條款，如須安裝擴充功能須接受授權條款並按下「接受」按鈕
+1. 於「擴充功能」視窗點擊右下角的「關閉」按鈕關閉視窗
+1. 如 LibreOffice 提示需要重新啟動，請重新啟動 LibreOffice 產品
+1. 開啟側邊欄的「圖庫」按鈕開啟圖庫面板，您應可以看到安裝好的新圖庫主題
 
-1. 自專案獲取一份軟體原始碼封存檔。
-1. 解開軟體原始碼封存檔。
-1. 將除下列之所有檔案複製進您的既有專案目錄：
-    + .markdownlint.yml
-    + README.md
-    + README.*.md
-1. 將下列檔案更名或將其內容整合進您的既有檔案：
-    + real.gitattributes → .gitattributes
-    + real.markdownlint.yml → .markdownlint.yml
-    + real.README.md → README.md
-    + real.README.zh_TW.md → README.zh_TW.md
-1. （如適用）編輯新的 [README.md 讀我文件](README.md)，將下列 _佔位字_ 替換為適當之內容：
-    + `_project_name_`：專案的（展示用）名稱。
-    + `_project_summary_`：一個單行的專案用途文字總結。
-    + `_namespace_/_project_`  
-      專案網址的變動部份，如果您使用的是令一個專案託管服務的話您需要改替換完整的網址。
-    + `_license_name_`：專案使用的授權條款名稱。
-    + `_license_url_`：專案使用的授權條款網址。
-1. 更新 [REUSE.toml reuse-tool 設定檔](REUSE.toml)中的著作權持有人名稱與宣告年份。
-1. 批量將 [compose.yml](compose.yml) 檔案中的 `project-name` 佔位字替換為您專案的主機名稱(hostname)適用版名稱
-1. 將所有的變更提交為一個新的修訂版（參考提交訊息：`chore: 初始化新專案`）。
+## 開發說明
 
-您可以移除/改寫部份檔案/檔案內容以符合您專案的需求。
+以下說明本產品開發的相關細節：
+
+### 先決條件
+
+進行本產品的開發之前，須先滿足下列條件：
+
+* 開發主機須安裝下列軟體：
+    + Docker Engine
+* 您須有開發主機的 Docker 使用權限（為 `docker` 群組之成員）
+* 開發主機須有網路網路連線能力
+
+### 產品開發流程
+
+本產品的開發流程如下：
+
+1. 於開發主機取出本產品的原始碼
+1. 於開發主機的命令列操作介面將作業目錄切換到本產品的原始碼根目錄
+1. 執行下列命令啟用開發環境容器：
+
+    ```bash
+    docker compose --profile test-environment up -d
+    ```
+
+1. 執行下列命令進入開發環境容器的命令列操作介面：
+
+    ```bash
+    docker compose --profile test exec \
+        -it test-environment bash --login
+    ```
+
+1. 於開發環境容器的命令列操作介面執行下列命令部署開發環境：
+
+    ```bash
+    ./dev-assets/deploy-dev-environment.sh
+    ```
+
+1. 於類 LibreOffice 產品中建立新圖庫主題，並於其中新增圖片。
+1. 於類 LibreOffice 產品的使用者資料目錄中取出圖庫主題的 sdg、sdv 與 thm 檔案，並將其放置於 [gallery](gallery) 目錄中。
+1. 執行下列命令建構產品：
+
+    ```bash
+    ./build-product.sh
+    ```
+
+   建構好的擴充功能會保存在原始碼根目錄下的 `dist/release` 目錄中，檔名分別為 `tw.com.ossii.libreoffice.extensions.gallery-themes.something-<版本>.oxt` 與 `tw.com.ossii.libreoffice.extensions.gallery-themes.something-<版本>.oxt`。
 
 ## 授權條款
 
-除非另有註明（個別檔案的開頭 / [REUSE.toml](https://reuse.software/spec-3.3/#reusetoml)），本產品以 [MIT 授權條款](https://opensource.org/license/mit)釋出供大眾於授權範圍內自由使用。
+除非另有註明（個別檔案的開頭 / [檔案開頭註解](https://reuse.software/spec-3.3/#comment-headers)），本產品以[第 _license_version_ 版之 _license_name_ 授權條款](_license_url_)（或其任意更近期之版本）釋出供大眾於授權範圍內自由使用。
 
 本作品遵從 [REUSE 規範](https://reuse.software/spec/)，參閱 [REUSE - Make licensing easy for everyone](https://reuse.software/) 網站以了解本產品的授權相關資訊。

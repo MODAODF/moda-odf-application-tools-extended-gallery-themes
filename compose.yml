@@ -8,12 +8,12 @@
 # Copyright 2025 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # Copyright 2026 OSS Integral Institute Co., Ltd. <https://www.ossii.com.tw/contact>
 # SPDX-License-Identifier: CC-BY-SA-4.0
-name: project-name
+name: modaodfapptools-ext-gal-themes
 services:
   # Environment for developing the project
   dev-environment:
-    container_name: project-name-dev
-    hostname: project-name-dev
+    container_name: modaodfapptools-ext-gal-themes-dev
+    hostname: modaodfapptools-ext-gal-themes-dev
     image: ubuntu:24.04
     volumes:
       - type: bind
