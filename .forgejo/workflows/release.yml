@@ -57,9 +57,6 @@ jobs:
       - name: Build the product
         run: ./build-product.sh
 
-      - name: Build the product (all-in-one variant)
-        run: ./build-product.sh all-in-one
-
       - name: Generate the product source archive
         run: |-
           set -e
