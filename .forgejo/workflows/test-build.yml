@@ -31,6 +31,7 @@ jobs:
         run: |
           set -e
           sudo ./dev-assets/deploy-dev-environment.sh
+          sudo ./sources/taiwan-road-traffic-signs/dev-assets/deploy-dev-environment.sh
 
       - name: Test build product
         run: |

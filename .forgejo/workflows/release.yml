@@ -52,7 +52,9 @@ jobs:
         run: sudo ./continuous-integration/patch-github-actions-sudo-security-policy.sh
 
       - name: Install the build dependencies
-        run: sudo ./dev-assets/deploy-dev-environment.sh
+        run: |-
+          sudo ./dev-assets/deploy-dev-environment.sh
+          sudo ./sources/taiwan-road-traffic-signs/dev-assets/deploy-dev-environment.sh
 
       - name: Build the product
         run: ./build-product.sh
