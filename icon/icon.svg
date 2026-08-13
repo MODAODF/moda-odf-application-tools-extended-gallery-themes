@@ -29,14 +29,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.87196"
-     inkscape:cx="16.464373"
-     inkscape:cy="15.176657"
+     inkscape:cx="16.510362"
+     inkscape:cy="15.222646"
      inkscape:document-units="px"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:window-width="1920"
-     inkscape:window-height="1009"
+     inkscape:window-height="1010"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -73,17 +73,17 @@
   <text
      xml:space="preserve"
      style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
-     x="5.4451251"
-     y="4.7624998"
+     x="5.5768852"
+     y="4.6257782"
      id="text1"><tspan
        sodipodi:role="line"
-       id="tspan1"
        style="stroke-width:0.264583"
-       x="5.4451251"
-       y="4.7624998">Place</tspan><tspan
+       x="5.5768852"
+       y="4.6257782"
+       id="tspan2">擴充</tspan><tspan
        sodipodi:role="line"
        style="stroke-width:0.264583"
-       x="5.4451251"
-       y="8.7312498"
-       id="tspan2">holder</tspan></text>
+       x="5.5768852"
+       y="8.8965492"
+       id="tspan3">圖庫</tspan></text>
 </svg>
