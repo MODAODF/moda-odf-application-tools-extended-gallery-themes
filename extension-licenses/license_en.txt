@@ -1,1 +1,6 @@
-(License text for your LibreOffice extension)
+The licensing terms for the components of this work are as follows:
+
+* Taiwan road traffic signs: Public domain (not protected by copyright)
+* Taiwan city and county emblems: Public domain (not protected by copyright)
+
+For the licensing terms of other files included in the extension, please refer to the REUSE.toml file in the extension and the header descriptions of each file.
