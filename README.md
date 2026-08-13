@@ -64,10 +64,10 @@
     ./build-product.sh
     ```
 
-   建構好的擴充功能會保存在原始碼根目錄下的 `dist/release` 目錄中，檔名分別為 `tw.com.ossii.libreoffice.extensions.gallery-themes.something-<版本>.oxt` 與 `tw.com.ossii.libreoffice.extensions.gallery-themes.something-<版本>.oxt`。
+   建構好的擴充功能會保存在原始碼根目錄下的 `dist/release` 目錄中，檔名為 `tw.gov.moda.libreoffice.extensions.extended-gallery-themes-<版本>.oxt`。
 
 ## 授權條款
 
-除非另有註明（個別檔案的開頭 / [檔案開頭註解](https://reuse.software/spec-3.3/#comment-headers)），本產品以[第 _license_version_ 版之 _license_name_ 授權條款](_license_url_)（或其任意更近期之版本）釋出供大眾於授權範圍內自由使用。
+除非另有註明（個別檔案的開頭 / [檔案開頭註解](https://reuse.software/spec-3.3/#comment-headers)），本產品以[第 4.0 國際版之 Creative Commons 姓名標示-相同方式分享 授權條款](https://creativecommons.org/licenses/by-sa/4.0/)（或其任意更近期之版本）釋出供大眾於授權範圍內自由使用。
 
 本作品遵從 [REUSE 規範](https://reuse.software/spec/)，參閱 [REUSE - Make licensing easy for everyone](https://reuse.software/) 網站以了解本產品的授權相關資訊。
