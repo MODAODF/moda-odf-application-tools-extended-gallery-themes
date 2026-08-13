@@ -148,6 +148,21 @@ if ! cp -a "${taiwan_road_signs_dir}/gallery/taiwan-road-signs."{sdg,sdv,str,thm
     exit 1
 fi
 
+taiwan_city_county_emblems_dir="${project_dir}/sources/taiwan-city-county-emblems"
+if ! "${taiwan_city_county_emblems_dir}/generate-gallery-files.sh" all-in-one; then
+    printf \
+        'Error: Unable to generate the gallery files of the Taiwan City and County Emblems theme.\n' \
+        1>&2
+    exit 1
+fi
+
+if ! cp -a "${taiwan_city_county_emblems_dir}/gallery/taiwan-city-county-emblems."{sdg,sdv,str,thm} "${project_dir}/gallery/"; then
+    printf \
+        'Error: Unable to move the generated gallery files of the Taiwan City and County Emblems theme to the gallery directory.\n' \
+        1>&2
+    exit 1
+fi
+
 if ! cd "${project_dir}"; then
     printf \
         'Error: Unable to change the working directory to the project directory.\n' \

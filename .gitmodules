@@ -12,3 +12,8 @@
 	url = https://git.ossii.com.tw/buoren/libreoffice-gallary-taiwan-road-traffic-signs.git
 	ignore = dirty
 	shallow = true
+[submodule "taiwan-city-county-emblems"]
+	path = sources/taiwan-city-county-emblems
+	url = https://git.ossii.com.tw/buoren/libo-ext-gal-thm-tw-city-county-emblems.git
+	ignore = dirty
+	shallow = true
