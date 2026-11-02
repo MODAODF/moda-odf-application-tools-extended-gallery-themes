@@ -68,6 +68,6 @@
 
 ## 授權條款
 
-除非另有註明（個別檔案的開頭 / [檔案開頭註解](https://reuse.software/spec-3.3/#comment-headers)），本產品以[第 4.0 國際版之 Creative Commons 姓名標示-相同方式分享 授權條款](https://creativecommons.org/licenses/by-sa/4.0/)（或其任意更近期之版本）釋出供大眾於授權範圍內自由使用。
+除非另有註明（[REUSE.toml](https://reuse.software/spec-3.3/#reusetoml) / [檔案開頭註解](https://reuse.software/spec-3.3/#comment-headers)），本產品以[第 4.0 國際版之 Creative Commons 姓名標示-相同方式分享 授權條款](https://creativecommons.org/licenses/by-sa/4.0/)（或其任意更近期之版本）釋出供大眾於授權範圍內自由使用。
 
 本作品遵從 [REUSE 規範](https://reuse.software/spec/)，參閱 [REUSE - Make licensing easy for everyone](https://reuse.software/) 網站以了解本產品的授權相關資訊。
