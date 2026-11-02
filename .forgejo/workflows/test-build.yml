@@ -26,6 +26,7 @@ jobs:
           fetch-depth: 0
 
           submodules: true
+          token: ${{ secrets.SUBMODULE_READ_TOKEN }}
 
       - name: Install build dependencies
         run: |

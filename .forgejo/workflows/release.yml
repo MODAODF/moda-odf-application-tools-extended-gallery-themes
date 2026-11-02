@@ -30,6 +30,7 @@ jobs:
           fetch-depth: 0
 
           submodules: true
+          token: ${{ secrets.SUBMODULE_READ_TOKEN }}
 
       - name: Determine the project identifier
         run: printf "project_id=${FORGEJO_REPOSITORY##*/}\\n" >> $FORGEJO_ENV
