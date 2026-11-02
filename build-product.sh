@@ -163,6 +163,21 @@ if ! cp -a "${taiwan_city_county_emblems_dir}/gallery/taiwan-city-county-emblems
     exit 1
 fi
 
+taiwan_certification_markings_dir="${project_dir}/sources/taiwan-certification-markings"
+if ! "${taiwan_certification_markings_dir}/generate-gallery-files.sh" all-in-one; then
+    printf \
+        'Error: Unable to generate the gallery files of the Taiwan Certification Markings theme.\n' \
+        1>&2
+    exit 1
+fi
+
+if ! cp -a "${taiwan_certification_markings_dir}/gallery/taiwan-certification-markings."{sdg,sdv,str,thm} "${project_dir}/gallery/"; then
+    printf \
+        'Error: Unable to move the generated gallery files of the Taiwan Certification Markings theme to the gallery directory.\n' \
+        1>&2
+    exit 1
+fi
+
 if ! cd "${project_dir}"; then
     printf \
         'Error: Unable to change the working directory to the project directory.\n' \

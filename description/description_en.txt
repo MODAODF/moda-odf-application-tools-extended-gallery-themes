@@ -2,3 +2,4 @@ Provide multiple Taiwan-localized gallery themes, including:
 
 * Taiwan road traffic signs
 * Taiwan city and county emblems
+* Taiwanese certification markings

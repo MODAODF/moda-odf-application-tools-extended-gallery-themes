@@ -2,5 +2,6 @@ The licensing terms for the components of this work are as follows:
 
 * Taiwan road traffic signs: Public domain (not protected by copyright)
 * Taiwan city and county emblems: Public domain (not protected by copyright)
+* Taiwanese certification markings: Usage must either be under the copyright holders' consent, or comply with the Copyright Act of the Republic of China (Taiwan) Article 50.
 
 For the licensing terms of other files included in the extension, please refer to the REUSE.toml file in the extension and the header descriptions of each file.
