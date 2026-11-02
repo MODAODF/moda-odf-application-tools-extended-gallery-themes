@@ -17,8 +17,3 @@
 	url = https://git.ossii.com.tw/buoren/libo-ext-gal-thm-tw-city-county-emblems.git
 	ignore = dirty
 	shallow = true
-[submodule "taiwan-certification-markings"]
-	path = sources/taiwan-certification-markings
-	url = https://git.ossii.com.tw/buoren/libo-ext-gal-thm-taiwan-certification-markings.git
-	ignore = dirty
-	shallow = true
